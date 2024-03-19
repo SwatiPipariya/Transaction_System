@@ -31,10 +31,10 @@ This project is a simple banking system implemented in Java using Hibernate with
 
 ## Project Structure
 
-- `bankingAccounts`: Contains entity class and repository for account management.
-- `bankingManageAccount`: Contains classes for managing account operations.
-- `bankingUser`: Contains entity class and repository for user management.
-- `bankingSystem`: Main package containing the `BankingApp` class to run the application.
+- `Accounts`: Contains entity class and repository for account management.
+- `AccountManager`: Contains classes for managing account operations.
+- `User`: Contains entity class and repository for user management.
+- `BankingSystem`: Main package containing the `BankingApp` class to run the application.
 - `META-INF`: Contains `persistence.xml` for Hibernate configuration.
 
 ## Contributors
