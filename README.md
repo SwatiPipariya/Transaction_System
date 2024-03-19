@@ -41,6 +41,4 @@ This project is a simple banking system implemented in Java using Hibernate with
 
 - [Swati Pipariya]([https://github.com/your-username](https://github.com/SwatiPipariya))
 
-## License
 
-This project is licensed under the [MIT License](LICENSE).
