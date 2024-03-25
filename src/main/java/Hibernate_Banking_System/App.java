@@ -9,9 +9,10 @@ import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 import javax.persistence.PersistenceContext;
 
+import Hibernate_Banking_System.Account.AccountRepository;
 import Hibernate_Banking_System.User.UserRepository;
 
-public class BankingApp {
+public class App {
 
 	    @PersistenceContext
 	    private static EntityManager entityManager;
@@ -22,6 +23,8 @@ public class BankingApp {
 
 	        UserRepository userRepository = new UserRepository();
 	        AccountRepository accountRepository = new AccountRepository();
+	        
+	        System.out.println("Good afternoon");
 
 	        // Use userRepository and accountRepository for operations
 	    }
