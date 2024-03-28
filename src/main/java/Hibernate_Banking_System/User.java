@@ -1,4 +1,4 @@
-package Hibernate_Banking_System;
+ackage Hibernate_Banking_System;
 
 
 	import javax.persistence.Entity;
@@ -61,34 +61,8 @@ package Hibernate_Banking_System;
 			return "User [id=" + id + ", fullName=" + fullName + ", email=" + email + ", password=" + password + "]";
 		}
 	    
-		@Transactional
-		public class UserRepository {
-
-		    @PersistenceContext
-		    private EntityManager entityManager;
-
-		    public void save(User user) {
-		        entityManager.persist(user);
-		    }
-
-		    public User findByEmailAndPassword(String email, String password) {
-		        try {
-		            return entityManager.createQuery("SELECT u FROM User u WHERE u.email = :email AND u.password = :password", User.class)
-		                    .setParameter("email", email)
-		                    .setParameter("password", password)
-		                    .getSingleResult();
-		        } catch (NoResultException e) {
-		            return null;
-		        }
-		    }
-
-		    public boolean existsByEmail(String email) {
-		        return entityManager.createQuery("SELECT COUNT(u) FROM User u WHERE u.email = :email", Long.class)
-		                .setParameter("email", email)
-		                .getSingleResult() > 0;
-		    }
-		}
-
+		
+		   
 	    
 	}
 
